@@ -138,23 +138,35 @@ would discover by tracing gates anyway).
 
 **The CPU** retires exactly one instruction per clock and exposes a retire port, so the
 testbench emits one trace line per instruction in the same format the C++ ISS produces.
-Correctness is then a `diff`. There is no human judgement in the loop, and a failure
-names the exact PC and encoded instruction where the two models diverged.
+The current gate compares retire traces and final test memory. A failure names the
+first differing instruction or memory word. Missing, malformed and incomplete outputs
+cannot count as passes, and a divergent prefix is retained if faulty RTL later times out.
 
 Coverage is a directed smoke test plus a constrained-random regression:
 
 ```
 make check TEST=smoke        # 62 instructions, hand-aimed at the classic decode traps
-bash scripts/regress.sh 400 300   # 400 random programs against the ISS
+bash scripts/regress.sh 100 300   # 100 random programs, fresh outputs required
 ```
 
-The full 400-seed, ~150-instruction-per-program regression run: **153,632 instructions
-compared, 0 mismatches, all 38 RV32I base-integer mnemonics retired at least once.** The
-random generator reserves a data pointer and emits no control flow (a DAG of straight-line
-code, no backward jumps), so every program terminates in a known instruction count while
-still producing operand and immediate combinations nobody chose deliberately -- forward-only
-generation was itself a fix, after an earlier version of the generator that allowed
-backward branches produced programs with no guaranteed termination bound.
+The locally measured smoke plus 100-seed suite compares **38,390 retired instructions
+with zero mismatches**, hitting all 38 implemented instruction mnemonics and both
+outcomes of all six branches. The generator reserves a data pointer and includes
+forward branches, JAL and JALR; it does not generate backward branches. Coverage of
+these bins does not establish complete architectural correctness.
+
+**Two JALR faults escaped that suite despite those coverage figures.** A locally
+hash-sealed set of 12 injected single-line RTL faults measures the checker itself.
+The original suite detects 10 of 12 with the final instrument; one directed program
+adds nonzero/odd-target/aliased JALR cases and detects all 12. The extended gold suite
+matches on 38,453 instructions. Final-memory comparison also improves observation of
+byte-store faults from 14/100 to 96/100 random programs, and halfword-store faults
+from 25/100 to 100/100. The four remaining byte-store escapes are reported.
+
+See [the plan](verification/PLAN.md), [post-review instrumentation changes](verification/ADDENDUM.md)
+and [results with exact reproduction commands and limits](verification/RESULTS.md).
+The CPU RTL and ISS instruction semantics are unchanged. The test-memory comparison
+is scoped to 16 KB and the reference is first-party, not a third-party conformance oracle.
 
 The directed smoke test targets signed versus unsigned comparison, arithmetic versus
 logical shift, shift-amount masking, every load and store width, byte-lane merging, and

@@ -1,0 +1,944 @@
+{
+  "phase": "extended",
+  "seals": {
+    "PLAN.md": "f2223d6788e3d66b8bdd6a9bc75b0eff2555d7e4979bd8bee2207bcdb9a18293",
+    "mutations.json": "0799c5e57ffbf465c2f8171c16154e4f9f4b0acf0eb4616d666e1e6d9f31bdf6"
+  },
+  "baseline_passed": 102,
+  "programs": [
+    {
+      "name": "arch_edges",
+      "sha256": "c63c2156d338fed59c49eec34fc9dcf9ad584a35d60a2ff490328625fee9a21a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/arch_edges.hex"
+    },
+    {
+      "name": "smoke",
+      "sha256": "2abce1d4c10c2a0c31e3d5113896e15372a41688f84e4d52bc6fecf73ad8da0d",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/smoke.hex"
+    },
+    {
+      "name": "seed_001",
+      "sha256": "81a6621ec457ea16802064ef7781bd3058c544b98130c2d68e918ed5b8aa8c5b",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_001.hex"
+    },
+    {
+      "name": "seed_002",
+      "sha256": "00714e1e2633f35060c9943fa0dd5337d89e2afd0612617660b8006263b1d077",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_002.hex"
+    },
+    {
+      "name": "seed_003",
+      "sha256": "8aba273629f75910d8f404e907653197e9babf7f800ee1813056ebbead47bf10",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_003.hex"
+    },
+    {
+      "name": "seed_004",
+      "sha256": "d5d385f6fbc7e511dbddfb16080e35d0355475be0ad29c5d68e5d3ac1657a7ce",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_004.hex"
+    },
+    {
+      "name": "seed_005",
+      "sha256": "3ec05a896915d2ed5d4b2e8f63e19be2c23cc99a3da76095cc87cb8adc86556f",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_005.hex"
+    },
+    {
+      "name": "seed_006",
+      "sha256": "ed09e9e7d7871b42f295634c9b753791cd74c8b9ce8ca082bdee34a7cb733a3e",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_006.hex"
+    },
+    {
+      "name": "seed_007",
+      "sha256": "09e0505a8595ed3144645a31d6c9b93967aca60c9eee11b00f8f9b3d54647bc3",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_007.hex"
+    },
+    {
+      "name": "seed_008",
+      "sha256": "1513ae40ae70747d01cbb538e3d0966a9abc071283538fdd22326f17571fc862",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_008.hex"
+    },
+    {
+      "name": "seed_009",
+      "sha256": "19a79ac7f6a326ab43a05b16a5b3ce383d45837caea02b41a285bd87487f7f9c",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_009.hex"
+    },
+    {
+      "name": "seed_010",
+      "sha256": "66939a69a8c11bf609e4c4cdac2040caa99a815cc790a475d11cc89273887850",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_010.hex"
+    },
+    {
+      "name": "seed_011",
+      "sha256": "d8103bce3f46c9941c8272cbe87f5195ba66fa8162649b420e4c459e033c57bd",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_011.hex"
+    },
+    {
+      "name": "seed_012",
+      "sha256": "d16b255103d4c6bf6a332c807c759b44b4e0bc6fa5ef0b180b5a01241d304e5d",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_012.hex"
+    },
+    {
+      "name": "seed_013",
+      "sha256": "59723842b666f1aa7f0bdcf4c9ace332980142705ef9caf423e9a54923bea3ff",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_013.hex"
+    },
+    {
+      "name": "seed_014",
+      "sha256": "0ca73adb785054fd495c19d72383f0651f7eaa6fd45a4e86bb1a779a918981be",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_014.hex"
+    },
+    {
+      "name": "seed_015",
+      "sha256": "8a5126f987bdb1fcc89a6d56e97c615221f7543fab384575fd383b58709261aa",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_015.hex"
+    },
+    {
+      "name": "seed_016",
+      "sha256": "a0175f0ef6120de5356f9a9c22fbe4d210e8f5b42fa009fa78de5237b266d32d",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_016.hex"
+    },
+    {
+      "name": "seed_017",
+      "sha256": "f14da93a49fa888e6d402e2d42c6820b458e6d19f7900bdea63633f1c79755df",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_017.hex"
+    },
+    {
+      "name": "seed_018",
+      "sha256": "394075302524c0a81cb273c5a5db15105c4a7a0e1bad2f43b3aefecbee24fa20",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_018.hex"
+    },
+    {
+      "name": "seed_019",
+      "sha256": "de296d8b50a1719e8f968376eb03c8822ffb677c913c69f9aaf9537295e7be7c",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_019.hex"
+    },
+    {
+      "name": "seed_020",
+      "sha256": "edd6677fa92aa1afb8f7ef271eca9441cc7b3fd4f0e7865c6e602b9569278b32",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_020.hex"
+    },
+    {
+      "name": "seed_021",
+      "sha256": "de3566caae47ee4c9f43bdd551d4e7b6e1752eb80d0cae49bb1898bae942b898",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_021.hex"
+    },
+    {
+      "name": "seed_022",
+      "sha256": "4355bcd7712c3c234962a3ad13ecb56bcb38b9f017e628c67db0b8f63f82b9d2",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_022.hex"
+    },
+    {
+      "name": "seed_023",
+      "sha256": "3ea062faa70d5dc1d56b1ae9bb09be03a671dd56e8290c57f96ef570c07d9ca9",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_023.hex"
+    },
+    {
+      "name": "seed_024",
+      "sha256": "c3ec3f1c68a68e301b3a447bf814bf243b15950c86d300e1319da0de44b68547",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_024.hex"
+    },
+    {
+      "name": "seed_025",
+      "sha256": "2072dc26cddc4808a51f8a0bc1fd98cec930741f9d88a3e96ba50ec0695f206d",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_025.hex"
+    },
+    {
+      "name": "seed_026",
+      "sha256": "d16d680c0c2efac2f69fa09523d88ae4a0f1c9995b322ca06f4d3a12825fe8f5",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_026.hex"
+    },
+    {
+      "name": "seed_027",
+      "sha256": "4f690b46e4343be4f17d64632723e2c6ffea964e3e3b5d8119878c33605d9c64",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_027.hex"
+    },
+    {
+      "name": "seed_028",
+      "sha256": "9c9260570483b01c0fde0c463d86718c5ce4dabace4d1f184b824040f63b8fd8",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_028.hex"
+    },
+    {
+      "name": "seed_029",
+      "sha256": "2dc68673df0fa2cc77de6bb1f4fafc4e6b273ee2308835ec966b4cb0e2351560",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_029.hex"
+    },
+    {
+      "name": "seed_030",
+      "sha256": "d2a622498fdecdae9a546b767638df9ae0f8af811853701c6ee7f4b1b812ceda",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_030.hex"
+    },
+    {
+      "name": "seed_031",
+      "sha256": "36e49d1f4c604fb68ff4a33cbd361f0dc2df1aba21f87c28d46c8332e50b1f0d",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_031.hex"
+    },
+    {
+      "name": "seed_032",
+      "sha256": "40485b2dcfcf7b8716cd626d5276dd36cc6c72574e060f3ba5110d230cafc7aa",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_032.hex"
+    },
+    {
+      "name": "seed_033",
+      "sha256": "939b7a9f6811691c47ab3c76b91df52b51322fc08434de393386e1c4d75e33e3",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_033.hex"
+    },
+    {
+      "name": "seed_034",
+      "sha256": "f623323e495f313bb9cfc56533880f7801e1266c51bc6dbc01d1fa07a2f09ea1",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_034.hex"
+    },
+    {
+      "name": "seed_035",
+      "sha256": "80d8eecb8b25350ac79866c23d8efc609d05f1a896ddb71d28a1e460939e8e2a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_035.hex"
+    },
+    {
+      "name": "seed_036",
+      "sha256": "264c4ec81d92d58d3897f0055bee94f7c4693a4e32a7a213ceffa88ef68d69cc",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_036.hex"
+    },
+    {
+      "name": "seed_037",
+      "sha256": "a316cada51e388ba91d66d152ffedc7c2300672e3d27758236d1f110b453742a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_037.hex"
+    },
+    {
+      "name": "seed_038",
+      "sha256": "b2bc6b3718ea2e7b9ff9e4fd6297bfd79f0ae4d784072516a9d6040c7efa4e9e",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_038.hex"
+    },
+    {
+      "name": "seed_039",
+      "sha256": "ff1ad5492d07bd752c31ec14003eb8f9af67fed6fd8c7369ea98398361ed00a2",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_039.hex"
+    },
+    {
+      "name": "seed_040",
+      "sha256": "8b78ee5dc6291a2dc30111e598cfbc06720a0ad79ea150781717048820ef06af",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_040.hex"
+    },
+    {
+      "name": "seed_041",
+      "sha256": "4f5b3961c3cfc803f16b38186689ddfa8683a4df09b69a3f52dd7b7c4587ef94",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_041.hex"
+    },
+    {
+      "name": "seed_042",
+      "sha256": "7d6603fa28b64545c5bb2ddd5d3b9c6d8698e29f6fdd7fdd199bad1ff2f93081",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_042.hex"
+    },
+    {
+      "name": "seed_043",
+      "sha256": "5137bad5f7c3c4cb1702c0f364054ba142739043746031bc18a46c8e538dbd6a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_043.hex"
+    },
+    {
+      "name": "seed_044",
+      "sha256": "ae6d5dfc6e9abf4d2a26ffb1d1c9844e4af2a07063dc468afdbf97a232078d0e",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_044.hex"
+    },
+    {
+      "name": "seed_045",
+      "sha256": "4db53910ef34481be5e151053539e5bb38afe0656540fc4ecc70bbf52d62bb7b",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_045.hex"
+    },
+    {
+      "name": "seed_046",
+      "sha256": "e92ed2a25b9f7601619c1a09d2cf4a400adad59c350edf915c218e14bad881d2",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_046.hex"
+    },
+    {
+      "name": "seed_047",
+      "sha256": "43289f519ab30f1aa6e0c2989a583aed1b4d56250ea137637f70aaa702730648",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_047.hex"
+    },
+    {
+      "name": "seed_048",
+      "sha256": "f91e77677d070ce3cf76d02a2a294b1fdf0896e207d6acded191a90dcefd3a8b",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_048.hex"
+    },
+    {
+      "name": "seed_049",
+      "sha256": "e026518f5b12b776410956b35de6fafeb882a6c228eeb983efb2d7b03a318d19",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_049.hex"
+    },
+    {
+      "name": "seed_050",
+      "sha256": "8a84aece5a738c095b08d374c11b1cbab0cb8f0ba7bb0edc73bf5a6f3979d945",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_050.hex"
+    },
+    {
+      "name": "seed_051",
+      "sha256": "0e4d787ece1177c55d42d0bf90540c1d9c94d28546c56fead0857060a315a1f5",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_051.hex"
+    },
+    {
+      "name": "seed_052",
+      "sha256": "f3aae16d00159ba6a8bf21e62c7a0fc914ad43ca828a8a24522805a45d82ae4e",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_052.hex"
+    },
+    {
+      "name": "seed_053",
+      "sha256": "0e6264424023567185e4c88d2de0b4fb62ff6597caf8a54508bf4612a34a5a65",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_053.hex"
+    },
+    {
+      "name": "seed_054",
+      "sha256": "3b84e6defe900486695832342734fe9ee955a476269614e84f3cd623c52ffb01",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_054.hex"
+    },
+    {
+      "name": "seed_055",
+      "sha256": "7d0a42cc64564b54fe2e8ea305e9c3163205449e1ecf3f493fd16945e5d56252",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_055.hex"
+    },
+    {
+      "name": "seed_056",
+      "sha256": "0fb0abbeaada7ecff9eca720a0371077fb49bcd842372e7c67133d22b68019f8",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_056.hex"
+    },
+    {
+      "name": "seed_057",
+      "sha256": "d56f4d13f100aabdf726a751d00f90de4d8dc65202aee5f59b9f414357a3e97f",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_057.hex"
+    },
+    {
+      "name": "seed_058",
+      "sha256": "d06d59b517a65910c6410d74a6c94e61a3c65909b84be15ca7ed0109e92d2649",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_058.hex"
+    },
+    {
+      "name": "seed_059",
+      "sha256": "fa8ea21a64c76cda551eb7ca38357d43d8e922e7b4aebea2a03084628c7b7aac",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_059.hex"
+    },
+    {
+      "name": "seed_060",
+      "sha256": "884ca9463296558d3542c3fb64d85c3ef327a0a2fd36a61024dc000d5d869682",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_060.hex"
+    },
+    {
+      "name": "seed_061",
+      "sha256": "ea26f1e1bc25f0a519d0e299d4acf00605d9552604efac00ff7c9eada375fa5b",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_061.hex"
+    },
+    {
+      "name": "seed_062",
+      "sha256": "0eeed4066bfea49e44756770e78641c39c924649cbd8fb41809ec56f65215a57",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_062.hex"
+    },
+    {
+      "name": "seed_063",
+      "sha256": "de3038208d9d7438b66d9c51468917a68576f6cbe4cc64fa04c42b3d87014e7a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_063.hex"
+    },
+    {
+      "name": "seed_064",
+      "sha256": "912378b2afe13c2167f67ceafbc3f131dee4e0e259394c0e7fd2be09cf824748",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_064.hex"
+    },
+    {
+      "name": "seed_065",
+      "sha256": "1dfdd48fac21a68368829edaed9c818431055474902b58349362ef2247083344",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_065.hex"
+    },
+    {
+      "name": "seed_066",
+      "sha256": "5ad8dcacec84c5725ca9685a002601cf32b33120a795b03dc59ded0354ee3256",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_066.hex"
+    },
+    {
+      "name": "seed_067",
+      "sha256": "941bc18e90afd7b8c92bf62b4ab1f00acb2a93e6b112084ca395e4fcf7c5f005",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_067.hex"
+    },
+    {
+      "name": "seed_068",
+      "sha256": "7d8ae7e6d2fa665c5df81f388869fafb524dd5f418f1aa34b5aefd199e7963c2",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_068.hex"
+    },
+    {
+      "name": "seed_069",
+      "sha256": "6e3060c1ba4a2bddd533805a79ed3e5a6c6fa213563e3cc87c9829c70d415e28",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_069.hex"
+    },
+    {
+      "name": "seed_070",
+      "sha256": "921525a0276ba7801723a22fd221250c9665741c89a253367c403f8ecaa5b6d3",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_070.hex"
+    },
+    {
+      "name": "seed_071",
+      "sha256": "11423825b8dff08a93376a3397a99d25ba6097daf840c63b6ba4ed07ea2753f4",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_071.hex"
+    },
+    {
+      "name": "seed_072",
+      "sha256": "a361670d15c9d51b645dcc8aa9fc168a12ddaed8b3bd0830bbf84f31cfa4cd97",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_072.hex"
+    },
+    {
+      "name": "seed_073",
+      "sha256": "5050dc88d24ab4ddd646a8dc617df8655b5a05268d598bf22d817ca6ad362436",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_073.hex"
+    },
+    {
+      "name": "seed_074",
+      "sha256": "9eef5a04dc6cf1aef67e5e2a0f07dfa35d338466ea263cefbd7653e4ce5834d5",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_074.hex"
+    },
+    {
+      "name": "seed_075",
+      "sha256": "66e56252edbb96936655b562a55ff5c1a364c18cc5f2519d5bfe3a1bfd84f0c0",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_075.hex"
+    },
+    {
+      "name": "seed_076",
+      "sha256": "4ae2f4a1624a94b41c7bef271ca446b64ec86463b866e79c70ba708650408ef2",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_076.hex"
+    },
+    {
+      "name": "seed_077",
+      "sha256": "3eb93e9da4c0c0382012432f5a31480a59af7f668d7caf4139b18bb084ea631d",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_077.hex"
+    },
+    {
+      "name": "seed_078",
+      "sha256": "a8219a101fddaf7a4a48b6768d0da3e034ab93042638462d1e883f98131cf020",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_078.hex"
+    },
+    {
+      "name": "seed_079",
+      "sha256": "4ee4678a835d29e630426825667c378cc6a83b5b07eda6c5b00fe5b35c14bf32",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_079.hex"
+    },
+    {
+      "name": "seed_080",
+      "sha256": "1dcb0bf64966751d5e703bbecec2d999e8704e64f5a1a91caf1decc2b5c34b31",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_080.hex"
+    },
+    {
+      "name": "seed_081",
+      "sha256": "8cb2e616a14ad3ecc28f10fa8590e40da0bb930595dcdbaa48c25ae9ce82744b",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_081.hex"
+    },
+    {
+      "name": "seed_082",
+      "sha256": "fa2e15d329db9254e71a936c3400e1504173ce6efcd8b6adc13469e7f2326f2b",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_082.hex"
+    },
+    {
+      "name": "seed_083",
+      "sha256": "43f25f83ffa0a4d75119f4a8ffd76763b538f41ac4dde0eb13a1ac849013a7d0",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_083.hex"
+    },
+    {
+      "name": "seed_084",
+      "sha256": "ae7076d7336fed6e144797ac5b89a029713b3be13b181fdd9af1de2532c9fb16",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_084.hex"
+    },
+    {
+      "name": "seed_085",
+      "sha256": "159c108a7d552a49bb0d00c5283660cd0a63401d222f0db7e7b80b2e82498cb5",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_085.hex"
+    },
+    {
+      "name": "seed_086",
+      "sha256": "a1249a5c5527be0f4b552685b44fd56e488415c8f51fb1881a07fa3e0906d97c",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_086.hex"
+    },
+    {
+      "name": "seed_087",
+      "sha256": "9235ab5468e944fbc4715a0c48b30b94b266b53bd79c1e0ddb7abceef57bee4a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_087.hex"
+    },
+    {
+      "name": "seed_088",
+      "sha256": "9104fe3ad840aa33129006669541e2bf682e3991eb21aeac468f84d94a85d92f",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_088.hex"
+    },
+    {
+      "name": "seed_089",
+      "sha256": "fd2cf8b98753df1fccdb9d6c8fc7d8aa0a59e48f613eaa33f5fb49cd4cb47a15",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_089.hex"
+    },
+    {
+      "name": "seed_090",
+      "sha256": "21a252cb8c9929e11ad9a83a38519b9e98eb47367faa709e59b7de341c4a107a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_090.hex"
+    },
+    {
+      "name": "seed_091",
+      "sha256": "89d2417e0dd2aab8178991132b6064a370c1d316a6bff9c411008ee29cdbd8d0",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_091.hex"
+    },
+    {
+      "name": "seed_092",
+      "sha256": "7d4b2ab3fabb57fc38349747c102f9bf446ccf6c6ce4da4009d31577a26dd4a9",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_092.hex"
+    },
+    {
+      "name": "seed_093",
+      "sha256": "b41a4f6813797d195f858d353a25351368f5e078ac98385dfc39c125634cd959",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_093.hex"
+    },
+    {
+      "name": "seed_094",
+      "sha256": "c8fc9bcc36f8fbc9c8a8649fc9aa6497c0152edd4491fac93769cd21f5a4104d",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_094.hex"
+    },
+    {
+      "name": "seed_095",
+      "sha256": "e30966674ebb85028db5b6d1035738dbdd9d4e086c194a5e8e3957960b2eb51f",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_095.hex"
+    },
+    {
+      "name": "seed_096",
+      "sha256": "4ddf66a4d06c4755ecac5c0ed7959fc2dd6c89590a9ad7af1dde736df30571c8",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_096.hex"
+    },
+    {
+      "name": "seed_097",
+      "sha256": "846c79bcff530154dd6639d32d21477c22c1f7d8a3770258855399b38c951b25",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_097.hex"
+    },
+    {
+      "name": "seed_098",
+      "sha256": "865d24f9d58370e508165a1eaf773c6b1437da470f0f7b17cab4a4086ce38d7f",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_098.hex"
+    },
+    {
+      "name": "seed_099",
+      "sha256": "0a3bcbeb2e4592d5470eceda05cca609fdb4faaf526fd804a4f0c0d73a01feff",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_099.hex"
+    },
+    {
+      "name": "seed_100",
+      "sha256": "93652e894143c69fb001d0dc8ccd313f3a5bbde84b13bec674f8c53c0f99de3a",
+      "hex": "<repo>/build/study-memory-v2-extended/programs/seed_100.hex"
+    }
+  ],
+  "coverage": {
+    "programs": 102,
+    "retired_instructions": 38453,
+    "instruction_counts": {
+      "LUI": 3151,
+      "AUIPC": 896,
+      "JAL": 949,
+      "JALR": 922,
+      "BEQ": 446,
+      "BNE": 435,
+      "BLT": 470,
+      "BGE": 443,
+      "BLTU": 455,
+      "BGEU": 493,
+      "LB": 744,
+      "LH": 760,
+      "LW": 701,
+      "LBU": 747,
+      "LHU": 678,
+      "SB": 947,
+      "SH": 984,
+      "SW": 1018,
+      "ADDI": 6987,
+      "SLTI": 912,
+      "SLTIU": 978,
+      "XORI": 962,
+      "ORI": 927,
+      "ANDI": 962,
+      "SLLI": 1255,
+      "SRLI": 1203,
+      "SRAI": 1237,
+      "ADD": 770,
+      "SUB": 804,
+      "SLL": 756,
+      "SLT": 786,
+      "SLTU": 768,
+      "XOR": 745,
+      "SRL": 751,
+      "SRA": 769,
+      "OR": 792,
+      "AND": 748,
+      "ECALL": 102
+    },
+    "mnemonics_hit": 38,
+    "mnemonics_total": 38,
+    "branch_outcomes": {
+      "BEQ": {
+        "taken": 85,
+        "not_taken": 361,
+        "ambiguous": 0
+      },
+      "BNE": {
+        "taken": 363,
+        "not_taken": 72,
+        "ambiguous": 0
+      },
+      "BLT": {
+        "taken": 204,
+        "not_taken": 266,
+        "ambiguous": 0
+      },
+      "BGE": {
+        "taken": 271,
+        "not_taken": 172,
+        "ambiguous": 0
+      },
+      "BLTU": {
+        "taken": 181,
+        "not_taken": 274,
+        "ambiguous": 0
+      },
+      "BGEU": {
+        "taken": 285,
+        "not_taken": 208,
+        "ambiguous": 0
+      }
+    },
+    "branch_bins_hit": 12,
+    "branch_bins_total": 12
+  },
+  "mutations": [
+    {
+      "id": "sra_logical",
+      "effect": "Arithmetic right shifts lose sign extension.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 2,
+        "iss": [
+          4,
+          1106301203,
+          2,
+          4294967295
+        ],
+        "rtl": [
+          4,
+          1106301203,
+          2,
+          1
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "slt_unsigned",
+      "effect": "Signed set-less-than becomes unsigned.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 62,
+        "iss": [
+          280,
+          29175603,
+          30,
+          1
+        ],
+        "rtl": [
+          280,
+          29175603,
+          30,
+          0
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "lb_zero_extend",
+      "effect": "Signed byte loads become zero-extended.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 18,
+        "iss": [
+          68,
+          1017859,
+          16,
+          4294967169
+        ],
+        "rtl": [
+          68,
+          1017859,
+          16,
+          129
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "lh_zero_extend",
+      "effect": "Signed halfword loads become zero-extended.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 20,
+        "iss": [
+          76,
+          3119363,
+          18,
+          4294934783
+        ],
+        "rtl": [
+          76,
+          3119363,
+          18,
+          33023
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "jal_link_plus8",
+      "effect": "JAL writes the wrong return address.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 54,
+        "iss": [
+          236,
+          8389359,
+          5,
+          240
+        ],
+        "rtl": [
+          236,
+          8389359,
+          5,
+          244
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "jalr_link_plus8",
+      "effect": "JALR writes the wrong return address when rd is nonzero.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 57,
+        "iss": [
+          252,
+          197607,
+          7,
+          256
+        ],
+        "rtl": [
+          252,
+          197607,
+          7,
+          260
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "jalr_odd_target",
+      "effect": "JALR fails to clear target bit zero.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 58,
+        "iss": [
+          260,
+          232979,
+          28,
+          256
+        ],
+        "rtl": [
+          261,
+          232979,
+          28,
+          256
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "blt_unsigned",
+      "effect": "BLT uses unsigned operand comparison.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 43,
+        "iss": [
+          180,
+          28165219,
+          0,
+          0
+        ],
+        "rtl": [
+          176,
+          1706515,
+          20,
+          3
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "beq_inverted",
+      "effect": "BEQ condition is inverted.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 37,
+        "iss": [
+          148,
+          29164643,
+          0,
+          0
+        ],
+        "rtl": [
+          144,
+          1706515,
+          20,
+          1
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "sb_lane0",
+      "effect": "Byte stores always write the lowest byte lane.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 24,
+        "iss": [
+          92,
+          1026819,
+          22,
+          2164217217
+        ],
+        "rtl": [
+          92,
+          1026819,
+          22,
+          2164227925
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "sh_swapped_lanes",
+      "effect": "Halfword stores select the opposite pair of lanes.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 28,
+        "iss": [
+          108,
+          1026947,
+          23,
+          305419649
+        ],
+        "rtl": [
+          108,
+          1026947,
+          23,
+          2164199988
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    },
+    {
+      "id": "imm_i_zero_extend",
+      "effect": "Negative I-type immediates lose sign extension.",
+      "status": "DETECTED",
+      "programs_run": 1,
+      "program": "arch_edges",
+      "evidence": {
+        "status": "DIFF",
+        "first_divergence": 1,
+        "iss": [
+          0,
+          4278190227,
+          1,
+          4294967280
+        ],
+        "rtl": [
+          0,
+          4278190227,
+          1,
+          4080
+        ],
+        "iss_instructions": 63,
+        "rtl_instructions": 63,
+        "kind": "trace",
+        "rtl_execution_failure": null,
+        "rtl_completed": true
+      }
+    }
+  ],
+  "counts": {
+    "DETECTED": 12,
+    "SURVIVED": 0,
+    "INVALID": 0,
+    "EXECUTION_FAILURE": 0
+  }
+}

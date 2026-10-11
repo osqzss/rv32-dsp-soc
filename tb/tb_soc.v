@@ -25,10 +25,13 @@ module tb_soc;
     integer expect_phase;
     integer got_phase, got_mag;
 
-    reg [1023:0] hex_path;
-    reg [1023:0] trace_path;
-    reg [1023:0] sample_path;
-    reg [1023:0] code_path;
+    reg [8191:0] hex_path;
+    reg [8191:0] trace_path;
+    reg [8191:0] sample_path;
+    reg [8191:0] code_path;
+    reg [8191:0] memory_path;
+    integer memory_fd, memory_words, nonzero;
+    reg do_memory;
     reg          do_trace;
     reg          do_check;
 
@@ -48,7 +51,7 @@ module tb_soc;
     initial begin
         if (!$value$plusargs("hex=%s", hex_path)) begin
             $display("FATAL: pass +hex=<file>");
-            $finish;
+            $fatal(1, "missing hex path");
         end
         if (!$value$plusargs("max=%d", max_cycles)) max_cycles = 20000000;
 
@@ -78,11 +81,14 @@ module tb_soc;
             trace_fd = $fopen(trace_path, "w");
             if (trace_fd == 0) begin
                 $display("FATAL: cannot open trace file");
-                $finish;
+                $fatal(1, "trace open failed");
             end
         end
 
         do_check = $value$plusargs("expect_phase=%d", expect_phase);
+        do_memory = $value$plusargs("memory=%s", memory_path);
+        if (!$value$plusargs("memory_words=%d", memory_words)) memory_words = 4096;
+        if (memory_words < 1 || memory_words > 65536) $fatal(1, "invalid memory size");
 
         repeat (4) @(posedge clk);
         @(negedge clk);
@@ -103,7 +109,7 @@ module tb_soc;
             if (cycles >= max_cycles) begin
                 $display("TIMEOUT after %0d cycles", cycles);
                 if (do_trace) $fclose(trace_fd);
-                $finish;
+                $fatal(1, "instruction limit reached");
             end
         end
     end
@@ -115,6 +121,19 @@ module tb_soc;
             $display("RTL: retired %0d instruction(s) in %0d cycles, halted",
                      retired, cycles);
             if (do_trace) $fclose(trace_fd);
+            if (do_memory) begin
+                memory_fd = $fopen(memory_path, "w");
+                if (!memory_fd) $fatal(1, "memory open failed");
+                $fwrite(memory_fd, "WORDS %0d\n", memory_words);
+                nonzero = 0;
+                for (i = 0; i < memory_words; i = i + 1)
+                    if (dut.mem[i] !== 32'd0) begin
+                        $fwrite(memory_fd, "%08x %08x\n", i * 4, dut.mem[i]);
+                        nonzero = nonzero + 1;
+                    end
+                $fwrite(memory_fd, "END %0d\n", nonzero);
+                $fclose(memory_fd);
+            end
 
             if (do_check) begin
                 got_phase = dut.mem[32'h3000 >> 2];

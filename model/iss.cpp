@@ -256,7 +256,7 @@ private:
 int main(int argc, char **argv) {
     if (argc < 2) {
         std::fprintf(stderr,
-            "usage: %s <program.hex> [trace.out] [max_insns]\n", argv[0]);
+            "usage: %s <program.hex> [trace.out] [max_insns] [memory.out] [memory_words]\n", argv[0]);
         return 2;
     }
     RV32I cpu;
@@ -274,6 +274,22 @@ int main(int argc, char **argv) {
 
     cpu.run(maxi, trace);
     if (trace) std::fclose(trace);
+
+    if (argc >= 5) {
+        uint32_t words = (argc >= 6) ? std::strtoul(argv[5], nullptr, 0) : RV32I::MEM_WORDS;
+        if (!words || words > RV32I::MEM_WORDS) return 2;
+        FILE *memory = std::fopen(argv[4], "w");
+        if (!memory) return 2;
+        std::fprintf(memory, "WORDS %u\n", words);
+        uint32_t nonzero = 0;
+        for (uint32_t i = 0; i < words; ++i)
+            if (cpu.load_word(i * 4)) {
+                std::fprintf(memory, "%08x %08x\n", i * 4, cpu.load_word(i * 4));
+                ++nonzero;
+            }
+        std::fprintf(memory, "END %u\n", nonzero);
+        if (std::fclose(memory)) return 2;
+    }
 
     std::fprintf(stderr, "ISS: retired %llu instruction(s), %s\n",
                  (unsigned long long)cpu.insns_retired(),

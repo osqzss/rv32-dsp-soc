@@ -49,11 +49,11 @@ $(BUILD)/sim: $(RTL) $(TB) | $(BUILD)
 # ---- the actual verification step ----
 check: $(BUILD)/iss $(BUILD)/$(TEST).hex $(BUILD)/sim
 	@echo "=== ISS ==="
-	@./$(BUILD)/iss $(BUILD)/$(TEST).hex $(BUILD)/$(TEST).iss.trace $(MAXI)
+	@./$(BUILD)/iss $(BUILD)/$(TEST).hex $(BUILD)/$(TEST).iss.trace $(MAXI) $(BUILD)/$(TEST).iss.memory 4096
 	@echo "=== RTL ==="
-	@$(VVP) $(BUILD)/sim +hex=$(BUILD)/$(TEST).hex +trace=$(BUILD)/$(TEST).rtl.trace +max=$(MAXI)
+	@$(VVP) $(BUILD)/sim +hex=$(BUILD)/$(TEST).hex +trace=$(BUILD)/$(TEST).rtl.trace +memory=$(BUILD)/$(TEST).rtl.memory +max=$(MAXI)
 	@echo "=== DIFF ==="
-	@bash scripts/compare.sh $(BUILD)/$(TEST).iss.trace $(BUILD)/$(TEST).rtl.trace
+	@bash scripts/compare.sh $(BUILD)/$(TEST).iss.trace $(BUILD)/$(TEST).rtl.trace --iss-memory $(BUILD)/$(TEST).iss.memory --rtl-memory $(BUILD)/$(TEST).rtl.memory
 
 # ---- gate count only (NOT timing -- see the `sta` target for that) ----
 # This reports post-synthesis cell and flip-flop counts. It does not analyze timing:

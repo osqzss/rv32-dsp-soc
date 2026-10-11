@@ -1,0 +1,14 @@
+[
+  {"id":"sra_logical","from":"if (alt) alu_out = $signed(a) >>> shamt;","to":"if (alt) alu_out = a >> shamt;","effect":"Arithmetic right shifts lose sign extension."},
+  {"id":"slt_unsigned","from":"alu_out = ($signed(a) < $signed(alu_b)) ? 32'd1 : 32'd0;","to":"alu_out = (a < alu_b) ? 32'd1 : 32'd0;","effect":"Signed set-less-than becomes unsigned."},
+  {"id":"lb_zero_extend","from":"load_out = {{24{ld_byte[7]}},  ld_byte};","to":"load_out = {24'b0, ld_byte};","effect":"Signed byte loads become zero-extended."},
+  {"id":"lh_zero_extend","from":"load_out = {{16{ld_half[15]}}, ld_half};","to":"load_out = {16'b0, ld_half};","effect":"Signed halfword loads become zero-extended."},
+  {"id":"jal_link_plus8","from":"OP_JAL:   begin wb_en = 1'b1; wb_data = pc_plus4; end","to":"OP_JAL:   begin wb_en = 1'b1; wb_data = pc + 32'd8; end","effect":"JAL writes the wrong return address."},
+  {"id":"jalr_link_plus8","from":"OP_JALR:  begin wb_en = 1'b1; wb_data = pc_plus4; end","to":"OP_JALR:  begin wb_en = 1'b1; wb_data = pc + 32'd8; end","effect":"JALR writes the wrong return address when rd is nonzero."},
+  {"id":"jalr_odd_target","from":"OP_JALR:   next_pc = (a + imm_i) & ~32'd1;","to":"OP_JALR:   next_pc = (a + imm_i);","effect":"JALR fails to clear target bit zero."},
+  {"id":"blt_unsigned","from":"branch_taken = ($signed(a) <  $signed(b));","to":"branch_taken = (a < b);","effect":"BLT uses unsigned operand comparison."},
+  {"id":"beq_inverted","from":"branch_taken = (a == b);","to":"branch_taken = (a != b);","effect":"BEQ condition is inverted."},
+  {"id":"sb_lane0","from":"st_strb = 4'b0001 << byte_off;","to":"st_strb = 4'b0001;","effect":"Byte stores always write the lowest byte lane."},
+  {"id":"sh_swapped_lanes","from":"st_strb = byte_off[1] ? 4'b1100 : 4'b0011;","to":"st_strb = byte_off[1] ? 4'b0011 : 4'b1100;","effect":"Halfword stores select the opposite pair of lanes."},
+  {"id":"imm_i_zero_extend","from":"wire [31:0] imm_i = {{20{insn[31]}}, insn[31:20]};","to":"wire [31:0] imm_i = {20'b0, insn[31:20]};","effect":"Negative I-type immediates lose sign extension."}
+]

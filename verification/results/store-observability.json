@@ -1,0 +1,1216 @@
+{
+  "sb_lane0": {
+    "programs": 100,
+    "trace_only_detected": 14,
+    "combined_detected": 96,
+    "rows": [
+      {
+        "seed": 1,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 2,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 3,
+        "trace_only": "PASS",
+        "combined": "PASS",
+        "detected_by": null
+      },
+      {
+        "seed": 4,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 5,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 6,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 7,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 8,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 9,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 10,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 11,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 12,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 13,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 14,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 15,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 16,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 17,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 18,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 19,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 20,
+        "trace_only": "PASS",
+        "combined": "PASS",
+        "detected_by": null
+      },
+      {
+        "seed": 21,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 22,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 23,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 24,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 25,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 26,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 27,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 28,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 29,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 30,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 31,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 32,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 33,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 34,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 35,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 36,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 37,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 38,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 39,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 40,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 41,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 42,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 43,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 44,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 45,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 46,
+        "trace_only": "PASS",
+        "combined": "PASS",
+        "detected_by": null
+      },
+      {
+        "seed": 47,
+        "trace_only": "PASS",
+        "combined": "PASS",
+        "detected_by": null
+      },
+      {
+        "seed": 48,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 49,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 50,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 51,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 52,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 53,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 54,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 55,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 56,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 57,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 58,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 59,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 60,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 61,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 62,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 63,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 64,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 65,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 66,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 67,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 68,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 69,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 70,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 71,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 72,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 73,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 74,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 75,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 76,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 77,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 78,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 79,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 80,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 81,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 82,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 83,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 84,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 85,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 86,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 87,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 88,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 89,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 90,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 91,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 92,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 93,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 94,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 95,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 96,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 97,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 98,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 99,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 100,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      }
+    ]
+  },
+  "sh_swapped_lanes": {
+    "programs": 100,
+    "trace_only_detected": 25,
+    "combined_detected": 100,
+    "rows": [
+      {
+        "seed": 1,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 2,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 3,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 4,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 5,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 6,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 7,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 8,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 9,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 10,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 11,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 12,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 13,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 14,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 15,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 16,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 17,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 18,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 19,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 20,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 21,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 22,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 23,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 24,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 25,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 26,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 27,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 28,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 29,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 30,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 31,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 32,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 33,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 34,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 35,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 36,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 37,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 38,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 39,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 40,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 41,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 42,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 43,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 44,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 45,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 46,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 47,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 48,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 49,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 50,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 51,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 52,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 53,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 54,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 55,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 56,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 57,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 58,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 59,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 60,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 61,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 62,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 63,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 64,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 65,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 66,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 67,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 68,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 69,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 70,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 71,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 72,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 73,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 74,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 75,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 76,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 77,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 78,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 79,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 80,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 81,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 82,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 83,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 84,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 85,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 86,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 87,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 88,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 89,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 90,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 91,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 92,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 93,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 94,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 95,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 96,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 97,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 98,
+        "trace_only": "DIFF",
+        "combined": "DIFF",
+        "detected_by": "trace"
+      },
+      {
+        "seed": 99,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      },
+      {
+        "seed": 100,
+        "trace_only": "PASS",
+        "combined": "DIFF",
+        "detected_by": "memory"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+*.sh text eol=lf
+Makefile text eol=lf
+verification/PLAN.md -text
+verification/mutations.json -text
