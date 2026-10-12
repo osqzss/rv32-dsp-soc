@@ -7,12 +7,21 @@ A UART peripheral was added afterward as a second, unrelated memory-mapped block
 that the bus interface generalizes rather than being shaped around the one accelerator
 that motivated it.
 
-Everything here is verified against an independent reference model rather than by
-inspecting waveforms. The CPU is checked instruction by instruction against a C++
-instruction-set simulator, the correlator is checked against a C++ signal model that
-first validates itself against the GPS interface specification, and the UART is checked
-by a host-side Python controller that scores every byte independently of the firmware's
-own self-report.
+The blocks are checked with separate executable models and checkers rather than
+waveform inspection alone. The CPU has a first-party C++ instruction-set simulator
+and a bounded cross-check against independently maintained rv32emu. The GPS signal
+model checks specification values before comparing RTL; a host-side Python controller
+scores UART bytes independently of the firmware's self-report. These are AI-assisted
+projects, not independent authorship or full architectural certification.
+
+## Additional verification evidence
+
+- [External ISA cross-check](verification/external_isa/): 40 of 42 adapted upstream
+  tests pass against pinned rv32emu, comparing PC, all registers and final memory;
+  FENCE.I and misaligned-access tests remain unsupported.
+- [Standard-cell mapping and proof](verification/asic_mapping/): full output and
+  next-state equivalence, three-corner electrical checks, and explicit remaining
+  setup/hold failures. The isolated timing candidate was rejected, not promoted.
 
 ## Result
 
@@ -321,3 +330,7 @@ interrupts, and memory is a flat asynchronous-read array. Those are the delibera
 next steps rather than oversights, and the retire-port trace methodology is specifically
 designed to survive them, since a pipelined core still retires instructions in order and
 can emit the same trace format.
+
+## External architectural evidence
+
+The unchanged CPU also passes 40 adapted upstream RV32I tests against the independently maintained rv32emu reference: 11,708 executed instructions, all registers/PC and final 16 KB memory compared. Two unsupported tests are explicitly excluded. See [external validation](verification/external_isa/README.md) for pinned inputs, negative controls, retained adapter failure and limitations. This is AI-assisted engineering work, not full RV32I conformance.

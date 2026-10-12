@@ -1,0 +1,36 @@
+[
+  {
+    "control": "memory_only_gold",
+    "status": "PASS",
+    "instructions": 4,
+    "observations": 5,
+    "registers_per_observation": 32,
+    "words_compared": 4096,
+    "test_code": 1,
+    "name": "no_reload"
+  },
+  {
+    "control": "memory_only_store_mutant",
+    "status": "FAIL",
+    "kind": "memory",
+    "address": 8192,
+    "reference": 21760,
+    "rtl": 85,
+    "name": "no_reload"
+  },
+  {
+    "control": "equal_empty",
+    "status": "REJECTED",
+    "error": "incomplete state: <validation>/runs/extra-controls/empty/reference.state"
+  },
+  {
+    "control": "equal_truncated",
+    "status": "REJECTED",
+    "error": "incomplete state: <validation>/runs/extra-controls/truncated/reference.state"
+  },
+  {
+    "control": "equal_memory_truncated",
+    "status": "REJECTED",
+    "error": "incomplete memory: <validation>/runs/extra-controls/memory_truncated/reference.memory"
+  }
+]

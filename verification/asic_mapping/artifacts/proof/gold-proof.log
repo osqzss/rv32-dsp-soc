@@ -1,0 +1,2 @@
+======== ABC command line "cec -T 120 runs/repair-proof/gold.blif runs/repair-proof/gold.blif"
+Networks are equivalent after structural hashing.  Time =     0.01 sec

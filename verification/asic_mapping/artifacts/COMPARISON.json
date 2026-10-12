@@ -1,0 +1,103 @@
+{
+  "baseline": {
+    "instances": 5788,
+    "flops": 1025,
+    "library_area_sum": "11891.796000",
+    "corners": {
+      "typ": {
+        "setup_slack_ns": 3.160122,
+        "hold_slack_ns": 0.004488,
+        "slew_violations": 87,
+        "capacitance_violations": 127,
+        "closure_pass": false
+      },
+      "slow": {
+        "setup_slack_ns": -4.423251,
+        "hold_slack_ns": 0.220426,
+        "slew_violations": 127,
+        "capacitance_violations": 125,
+        "closure_pass": false
+      },
+      "fast": {
+        "setup_slack_ns": 4.424589,
+        "hold_slack_ns": -0.037642,
+        "slew_violations": 77,
+        "capacitance_violations": 127,
+        "closure_pass": false
+      }
+    }
+  },
+  "repair": {
+    "instances": 6367,
+    "flops": 1025,
+    "library_area_sum": "12496.946000",
+    "corners": {
+      "typ": {
+        "setup_slack_ns": 4.211698,
+        "hold_slack_ns": 0.015754,
+        "slew_violations": 0,
+        "capacitance_violations": 0,
+        "closure_pass": true
+      },
+      "slow": {
+        "setup_slack_ns": -0.216991,
+        "hold_slack_ns": 0.238338,
+        "slew_violations": 0,
+        "capacitance_violations": 0,
+        "closure_pass": false
+      },
+      "fast": {
+        "setup_slack_ns": 4.950031,
+        "hold_slack_ns": -0.029735,
+        "slew_violations": 0,
+        "capacitance_violations": 0,
+        "closure_pass": false
+      }
+    }
+  },
+  "candidate": {
+    "instances": 6706,
+    "flops": 1025,
+    "library_area_sum": "12961.648000",
+    "corners": {
+      "typ": {
+        "setup_slack_ns": 4.75797,
+        "hold_slack_ns": 0.015976,
+        "slew_violations": 0,
+        "capacitance_violations": 0,
+        "closure_pass": true
+      },
+      "slow": {
+        "setup_slack_ns": 1.894277,
+        "hold_slack_ns": 0.238869,
+        "slew_violations": 0,
+        "capacitance_violations": 0,
+        "closure_pass": true
+      },
+      "fast": {
+        "setup_slack_ns": 5.242612,
+        "hold_slack_ns": -0.029905,
+        "slew_violations": 0,
+        "capacitance_violations": 0,
+        "closure_pass": false
+      }
+    }
+  },
+  "candidate_isa": {
+    "population": 42,
+    "counts": {
+      "PASS": 40,
+      "FAIL": 0,
+      "UNSUPPORTED": 2,
+      "ERROR": 0,
+      "SKIPPED": 0
+    },
+    "instructions": 11708
+  },
+  "registered_candidate_criteria": {
+    "setup_improves_all_corners": true,
+    "electrical_clean_all_corners": true,
+    "hold_not_worse_all_corners": false
+  },
+  "promotion_pass": false
+}

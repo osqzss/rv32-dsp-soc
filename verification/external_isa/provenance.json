@@ -1,0 +1,18 @@
+{
+  "rv32emu": {
+    "origin": "https://github.com/sysprog21/rv32emu.git",
+    "revision": "a5b5f9217fb2b4d8a73fcf4e572aa90ccc33f07c"
+  },
+  "riscv-tests": {
+    "origin": "https://github.com/riscv-software-src/riscv-tests.git",
+    "revision": "7b68f7b91f827f8d94cc1c57ff123752c5c8f704"
+  },
+  "rv32emu/tools/kconfig": {
+    "origin": "https://github.com/sysprog21/Kconfiglib",
+    "revision": "6d9102abd55b614d3c6133529ffa40dbea7fd2cf"
+  },
+  "rv32emu/src/mini-gdbstub": {
+    "origin": "https://github.com/RinHizakura/mini-gdbstub",
+    "revision": "8aefbcda5311c2eeb49ae6c457e4957f5c232863"
+  }
+}

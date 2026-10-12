@@ -1,0 +1,2 @@
+======== ABC command line "cec -T 120 runs/repair-proof/gold.blif runs/repair-proof/mapped.blif"
+Networks are equivalent.  Time =     1.67 sec

@@ -1,0 +1,32 @@
+{
+  "gold": {
+    "inputs": 1290,
+    "outputs": 1229,
+    "undriven_outside_cone": []
+  },
+  "mapped": {
+    "inputs": 1290,
+    "outputs": 1229,
+    "undriven_outside_cone": []
+  },
+  "mutant": {
+    "inputs": 1290,
+    "outputs": 1229,
+    "undriven_outside_cone": []
+  },
+  "dflip": {
+    "inputs": 1290,
+    "outputs": 1229,
+    "undriven_outside_cone": []
+  },
+  "swap": {
+    "inputs": 1290,
+    "outputs": 1229,
+    "undriven_outside_cone": []
+  },
+  "deep": {
+    "inputs": 1290,
+    "outputs": 1229,
+    "undriven_outside_cone": []
+  }
+}

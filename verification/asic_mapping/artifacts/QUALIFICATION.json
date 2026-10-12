@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "setup_improves_all_corners": true,
+    "electrical_clean_all_corners": true,
+    "hold_not_worse_all_corners": false,
+    "formal_pass": true,
+    "architectural_pass": true
+  },
+  "promotion_pass": false,
+  "candidate_isa": {
+    "counts": {
+      "PASS": 40,
+      "FAIL": 0,
+      "UNSUPPORTED": 2,
+      "ERROR": 0,
+      "SKIPPED": 0
+    },
+    "instructions": 11708,
+    "observations": 11748,
+    "register_comparisons": 375936
+  },
+  "live_cec": {
+    "gold": "Networks are equivalent",
+    "mapped": "Networks are equivalent",
+    "mutant": "Networks are NOT EQUIVALENT",
+    "dflip": "Networks are NOT EQUIVALENT",
+    "swap": "Networks are NOT EQUIVALENT",
+    "deep": "Networks are NOT EQUIVALENT"
+  }
+}

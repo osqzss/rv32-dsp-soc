@@ -1,0 +1,52 @@
+diff --git a/src/riscv.c b/src/riscv.c
+index 27d1a22..f8e565d 100644
+--- a/src/riscv.c
++++ b/src/riscv.c
+@@ -1050,6 +1050,47 @@ static void rv_run_and_trace(riscv_t *rv)
+     assert(attr && attr->data.user.elf_program);
+     attr->cycle_per_step = 1;
+ 
++
++    /* Local validation adapter: no ISA execution logic here. */
++    const char *state_path = getenv("RV32_VALIDATION_STATE");
++    if (state_path) {
++        rv->debug_mode = true;
++        FILE *state = fopen(state_path, "w");
++        FILE *mem = fopen(getenv("RV32_VALIDATION_MEMORY"), "w");
++        assert(state && mem);
++        for (unsigned r = 0; r < 32; r++)
++            rv_set_reg(rv, r, 0);
++        bool completed = false;
++        for (unsigned n = 1; n <= 20000; n++) {
++            uint32_t pc = rv_get_pc(rv);
++            if (pc >= 16384 || (pc & 3)) break;
++            uint32_t insn = memory_read_w(pc);
++            fprintf(state, "%08x %08x", pc, insn);
++            for (unsigned r = 0; r < 32; r++)
++                fprintf(state, " %08x", rv_get_reg(rv, r));
++            fputc('\n', state);
++            fflush(state);
++            if (insn == 0x00000073) {
++                fprintf(state, "END %u\n", n);
++                completed = true;
++                break;
++            }
++            rv_step_debug(rv);
++            if (rv_has_halted(rv)) break;
++        }
++        if (completed) {
++            fprintf(mem, "WORDS 4096\n");
++            for (unsigned a = 0; a < 16384; a += 4)
++                fprintf(mem, "%08x %08x\n", a, memory_read_w(a));
++            fprintf(mem, "END 4096\n");
++        }
++        fclose(state);
++        fclose(mem);
++        attr->exit_code = completed ? 0 : 2;
++        rv_halt(rv);
++        return;
++    }
++
+     const char *prog_name = attr->data.user.elf_program;
+     elf_t *elf = elf_new();
+     assert(elf);

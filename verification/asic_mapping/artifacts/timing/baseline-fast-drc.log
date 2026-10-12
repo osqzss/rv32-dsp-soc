@@ -1,0 +1,20 @@
+OpenSTA 3.1.0 3f4b337e30 Copyright (c) 2026, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+BEGIN_ALL_DESIGN_RULE_CHECKS
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+_06456_/ZN                              0.146240    0.275090   -0.128850 (VIOLATED)
+
+max capacitance
+
+Pin                                        Limit         Cap       Slack
+------------------------------------------------------------------------
+_07480_/ZN                             26.054399   77.123207  -51.068802 (VIOLATED)
+
+END_ALL_DESIGN_RULE_CHECKS

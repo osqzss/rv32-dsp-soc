@@ -1,0 +1,10 @@
+read_liberty -lib inputs/nangate45_typ.lib
+read_verilog ../../rtl/rv32i_core.v
+synth -top rv32i_core -flatten -noabc
+dfflibmap -liberty inputs/nangate45_typ.lib
+abc -liberty inputs/nangate45_typ.lib -constr abc-drive-load.constr
+clean
+check -assert
+stat -liberty inputs/nangate45_typ.lib
+write_verilog -noattr runs/rebuild/mapped.v
+write_json runs/rebuild/mapped.json

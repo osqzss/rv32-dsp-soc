@@ -2,3 +2,8 @@
 Makefile text eol=lf
 verification/PLAN.md -text
 verification/mutations.json -text
+verification/external_isa/** text eol=lf
+verification/asic_mapping/** text eol=lf
+verification/asic_mapping/artifacts/normalized/*.gz -text
+verification/asic_mapping/artifacts/**/*.log -whitespace
+verification/external_isa/reference-observation-v2.patch -whitespace

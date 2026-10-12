@@ -1,0 +1,17 @@
+# Independent ISA validation registration
+
+Frozen before adapter implementation and test execution. Local hash seal, not public preregistration. Base ad53882521088420a4a69c907765ddaece99feb8. Upstream riscv-tests a5b5f9217fb2b4d8a73fcf4e572aa90ccc33f07c; rv32emu 7b68f7b91f827f8d94cc1c57ff123752c5c8f704.
+
+Hypothesis: unchanged aligned RV32I RTL agrees with upstream test assertions and independently maintained rv32emu semantics over the supported rv32ui test population. Prediction: supported arithmetic/control/aligned-memory tests pass; no CPU fix predicted. Failures stay in the ledger and are investigated before a fix.
+
+Population: every .S entry named by rv32ui/Makefrag, enumerated into a hashed manifest before the full run. Exclude fence_i (instruction cache synchronization not supported), ma_data (misaligned data contract absent). Inspect ld_st/st_ld for fence: if present, mark those unsupported rather than silently erase fences. Any further unsupported instruction or compile error is recorded separately. Smoke development input: add.S only. Counts from manifest, never hand-entered totals. No stochastic inference or universal detection estimate follows from deterministic tests.
+
+Contract: PC reset 0, 32 registers zero, 16 KB unified little-endian memory; text below 0x2000, data at 0x2000. GNU cpp/as/ld, no first-party assembler or ISS. Test bodies and scalar macros remain byte-identical upstream; custom riscv_test.h replaces privileged environment only. Upstream embedded expected-value branches and gp pass/fail remain. ECALL 0x00000073 is an external test stop, not a successfully handled trap. x3=1 is pass; any other x3 fails. At most 20,000 instructions and 30 seconds per engine.
+
+Comparison: every pre-instruction PC, instruction word, x0..x31 (including terminal sentinel); entire 4,096-word final memory. rv32emu observation adapter calls upstream rv_step_debug, exposes state only, zeroes initial registers, stops before ECALL. No ISA semantics changes. RTL bench observes internal registers independently of retire values. Reject malformed/empty/truncated streams, mismatched initial/terminal state, count/termination mismatch and memory mismatch. Document FENCE, exceptions, instruction/data alignment, privilege, CSR, interrupts and ECALL limits.
+
+Controls: unchanged add test; real SRA-as-SRL RTL mutant on sra test; real SB-lane-zero mutant on sb test; real inverted-BEQ mutant on beq test. Require compiled mutants and actual PC/register/memory divergence, not generic compile/process failure. Tamper a saved register, PC and memory separately; truncated/equal-empty evidence must fail. Run baseline again after controls. Also independently corrupt an upstream expected add value and require the upstream pass/fail assertion to fail in both engines even when their states agree.
+
+Outcomes: PASS requires both engines completed, state/memory equal and upstream pass code; FAIL for real divergence or failed upstream assertion; UNSUPPORTED for a predeclared unsupported feature; ERROR/VOID for broken environment, missing evidence, process failure or no valid comparison. Preserve all. Report attempted/passed/failed/skipped/unsupported/error counts whose sum equals manifest population. Halt expansion if no complete end-to-end development proof; select alternative instead of open-ended tooling work.
+
+No commits or publication required for this local seal. SHA256 establishes unchanged local inputs; timestamp alone is not proof of preregistration order.

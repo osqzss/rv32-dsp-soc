@@ -1,0 +1,22 @@
+{
+  "population": 42,
+  "attempted": 40,
+  "counts": {
+    "PASS": 40,
+    "FAIL": 0,
+    "UNSUPPORTED": 2,
+    "ERROR": 0,
+    "SKIPPED": 0
+  },
+  "executed_instructions": 11708,
+  "observations": 11748,
+  "register_comparisons": 375936,
+  "memory_words_per_program": 4096,
+  "controls_passed": 10,
+  "cpu_rtl_unchanged": true,
+  "original_jalr_elf_unchanged": true,
+  "decoder_tokens_unchanged": true,
+  "scalar_macros_unchanged": true,
+  "post_seal_change_is_core_path_only": true,
+  "extra_controls_passed": 5
+}

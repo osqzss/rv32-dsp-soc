@@ -1,0 +1,380 @@
+{
+  "population": 42,
+  "attempted": 40,
+  "counts": {
+    "PASS": 39,
+    "FAIL": 0,
+    "UNSUPPORTED": 2,
+    "ERROR": 1,
+    "SKIPPED": 0
+  },
+  "instructions": 11633,
+  "results": [
+    {
+      "status": "PASS",
+      "instructions": 1,
+      "observations": 2,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "simple"
+    },
+    {
+      "status": "PASS",
+      "instructions": 425,
+      "observations": 426,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "add"
+    },
+    {
+      "status": "PASS",
+      "instructions": 202,
+      "observations": 203,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "addi"
+    },
+    {
+      "status": "PASS",
+      "instructions": 445,
+      "observations": 446,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "and"
+    },
+    {
+      "status": "PASS",
+      "instructions": 158,
+      "observations": 159,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "andi"
+    },
+    {
+      "status": "PASS",
+      "instructions": 19,
+      "observations": 20,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "auipc"
+    },
+    {
+      "status": "PASS",
+      "instructions": 251,
+      "observations": 252,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "beq"
+    },
+    {
+      "status": "PASS",
+      "instructions": 269,
+      "observations": 270,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "bge"
+    },
+    {
+      "status": "PASS",
+      "instructions": 294,
+      "observations": 295,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "bgeu"
+    },
+    {
+      "status": "PASS",
+      "instructions": 251,
+      "observations": 252,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "blt"
+    },
+    {
+      "status": "PASS",
+      "instructions": 276,
+      "observations": 277,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "bltu"
+    },
+    {
+      "status": "PASS",
+      "instructions": 251,
+      "observations": 252,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "bne"
+    },
+    {
+      "name": "fence_i",
+      "status": "UNSUPPORTED",
+      "reason": "FENCE.I and self-modifying instruction synchronization outside contract"
+    },
+    {
+      "status": "PASS",
+      "instructions": 15,
+      "observations": 16,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "jal"
+    },
+    {
+      "status": "ERROR",
+      "error": "Command '['<validation>/upstream/rv32emu/build/rv32emu', '-t', '<validation>/runs/external-suite/jalr/test.elf']' died with <Signals.SIGSEGV: 11>.",
+      "name": "jalr"
+    },
+    {
+      "status": "PASS",
+      "instructions": 213,
+      "observations": 214,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "lb"
+    },
+    {
+      "status": "PASS",
+      "instructions": 213,
+      "observations": 214,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "lbu"
+    },
+    {
+      "status": "PASS",
+      "instructions": 229,
+      "observations": 230,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "lh"
+    },
+    {
+      "status": "PASS",
+      "instructions": 238,
+      "observations": 239,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "lhu"
+    },
+    {
+      "status": "PASS",
+      "instructions": 243,
+      "observations": 244,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "lw"
+    },
+    {
+      "status": "PASS",
+      "instructions": 923,
+      "observations": 924,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "ld_st"
+    },
+    {
+      "status": "PASS",
+      "instructions": 25,
+      "observations": 26,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "lui"
+    },
+    {
+      "name": "ma_data",
+      "status": "UNSUPPORTED",
+      "reason": "misaligned data accesses outside contract"
+    },
+    {
+      "status": "PASS",
+      "instructions": 448,
+      "observations": 449,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "or"
+    },
+    {
+      "status": "PASS",
+      "instructions": 165,
+      "observations": 166,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "ori"
+    },
+    {
+      "status": "PASS",
+      "instructions": 414,
+      "observations": 415,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sb"
+    },
+    {
+      "status": "PASS",
+      "instructions": 467,
+      "observations": 468,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sh"
+    },
+    {
+      "status": "PASS",
+      "instructions": 474,
+      "observations": 475,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sw"
+    },
+    {
+      "status": "PASS",
+      "instructions": 443,
+      "observations": 444,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "st_ld"
+    },
+    {
+      "status": "PASS",
+      "instructions": 453,
+      "observations": 454,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sll"
+    },
+    {
+      "status": "PASS",
+      "instructions": 201,
+      "observations": 202,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "slli"
+    },
+    {
+      "status": "PASS",
+      "instructions": 419,
+      "observations": 420,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "slt"
+    },
+    {
+      "status": "PASS",
+      "instructions": 197,
+      "observations": 198,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "slti"
+    },
+    {
+      "status": "PASS",
+      "instructions": 197,
+      "observations": 198,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sltiu"
+    },
+    {
+      "status": "PASS",
+      "instructions": 419,
+      "observations": 420,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sltu"
+    },
+    {
+      "status": "PASS",
+      "instructions": 472,
+      "observations": 473,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sra"
+    },
+    {
+      "status": "PASS",
+      "instructions": 216,
+      "observations": 217,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "srai"
+    },
+    {
+      "status": "PASS",
+      "instructions": 466,
+      "observations": 467,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "srl"
+    },
+    {
+      "status": "PASS",
+      "instructions": 210,
+      "observations": 211,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "srli"
+    },
+    {
+      "status": "PASS",
+      "instructions": 417,
+      "observations": 418,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "sub"
+    },
+    {
+      "status": "PASS",
+      "instructions": 447,
+      "observations": 448,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "xor"
+    },
+    {
+      "status": "PASS",
+      "instructions": 167,
+      "observations": 168,
+      "registers_per_observation": 32,
+      "words_compared": 4096,
+      "test_code": 1,
+      "name": "xori"
+    }
+  ]
+}
